@@ -1,0 +1,58 @@
+2024-12-16T01:39:00.001+08:00  WARN 7 --- [run.halo.app.content.stats.VisitedEventReconciler-t-1] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2024-12-16T01:39:00.024+08:00  WARN 7 --- [run.halo.app.content.stats.PostStatsUpdater-t-1] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2024-12-16T01:39:00.038+08:00  WARN 7 --- [run.halo.app.core.reconciler.PostReconciler-t-1] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2024-12-16T01:39:00.041+08:00  WARN 7 --- [run.halo.app.core.reconciler.PostReconciler-t-1] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2024-12-16T01:39:00.066+08:00  WARN 7 --- [run.halo.app.core.reconciler.PostReconciler-t-1] io.r2dbc.h2.H2Connection                 : Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only
+2024-12-16T03:00:00.000+08:00  INFO 7 --- [scheduling-1] r.h.a.s.a.r.RememberTokenCleaner         : Expired remember me tokens have been cleaned up.
+2024-12-16T07:35:18.449+08:00 ERROR 7 --- [boundedElastic-796] org.thymeleaf.TemplateEngine             : [THYMELEAF][boundedElastic-796] Exception processing throttled template "index": An error happened during template rendering (template: "common/navbar" - line 118, col 77)
+
+org.thymeleaf.exceptions.TemplateOutputException: An error happened during template rendering (template: "common/navbar" - line 118, col 77)
+	at org.thymeleaf.engine.OutputTemplateHandler.handleText(OutputTemplateHandler.java:75) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.AbstractTemplateHandler.handleText(AbstractTemplateHandler.java:221) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleText(ProcessorTemplateHandler.java:587) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.Text.beHandled(Text.java:97) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:300) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.queueProcessable(ProcessorTemplateHandler.java:2106) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1642) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:300) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.StandaloneElementTagModelProcessable.process(StandaloneElementTagModelProcessable.java:114) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handlePending(ProcessorTemplateHandler.java:2054) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.ThrottledTemplateProcessor.process(ThrottledTemplateProcessor.java:230) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.ThrottledTemplateProcessor.process(ThrottledTemplateProcessor.java:200) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.SpringWebFluxTemplateEngine$StreamThrottledTemplateProcessor.process(SpringWebFluxTemplateEngine.java:720) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.SpringWebFluxTemplateEngine.lambda$createChunkedStream$2(SpringWebFluxTemplateEngine.java:269) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at reactor.core.publisher.FluxGenerate$GenerateSubscription.slowPath(FluxGenerate.java:271) ~[reactor-core-3.7.0.jar:3.7.0]
+	at reactor.core.publisher.FluxGenerate$GenerateSubscription.request(FluxGenerate.java:213) ~[reactor-core-3.7.0.jar:3.7.0]
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.request(FluxPeekFuseable.java:144) ~[reactor-core-3.7.0.jar:3.7.0]
+	at reactor.core.publisher.FluxSubscribeOn$SubscribeOnSubscriber.requestUpstream(FluxSubscribeOn.java:131) ~[reactor-core-3.7.0.jar:3.7.0]
+	at reactor.core.publisher.FluxSubscribeOn$SubscribeOnSubscriber.onSubscribe(FluxSubscribeOn.java:124) ~[reactor-core-3.7.0.jar:3.7.0]
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onSubscribe(FluxPeekFuseable.java:178) ~[reactor-core-3.7.0.jar:3.7.0]
+	at reactor.core.publisher.FluxGenerate.subscribe(FluxGenerate.java:85) ~[reactor-core-3.7.0.jar:3.7.0]
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68) ~[reactor-core-3.7.0.jar:3.7.0]
+	at reactor.core.publisher.FluxSubscribeOn$SubscribeOnSubscriber.run(FluxSubscribeOn.java:194) ~[reactor-core-3.7.0.jar:3.7.0]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84) ~[reactor-core-3.7.0.jar:3.7.0]
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37) ~[reactor-core-3.7.0.jar:3.7.0]
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:na]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+Caused by: java.nio.channels.ClosedByInterruptException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(Unknown Source) ~[na:na]
+	at java.base/java.nio.channels.Channels$WritableByteChannelImpl.write(Unknown Source) ~[na:na]
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(Unknown Source) ~[na:na]
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(Unknown Source) ~[na:na]
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(Unknown Source) ~[na:na]
+	at java.base/sun.nio.cs.StreamEncoder.lockedWrite(Unknown Source) ~[na:na]
+	at java.base/sun.nio.cs.StreamEncoder.write(Unknown Source) ~[na:na]
+	at java.base/sun.nio.cs.StreamEncoder.write(Unknown Source) ~[na:na]
+	at java.base/java.io.Writer.write(Unknown Source) ~[na:na]
+	at org.thymeleaf.engine.ThrottledTemplateWriter.write(ThrottledTemplateWriter.java:185) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.AbstractTextualTemplateEvent.writeContent(AbstractTextualTemplateEvent.java:218) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.Text.write(Text.java:78) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.OutputTemplateHandler.handleText(OutputTemplateHandler.java:71) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 32 common frames omitted
+
